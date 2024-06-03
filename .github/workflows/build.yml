@@ -26,7 +26,7 @@ jobs:
 
       - name: Build
         run: |
-          pyinstaller --onefile --noconsole Task8.py
+          pyinstaller --onefile Task8.py
 
       - name: Upload artifact
         uses: actions/upload-artifact@v3
