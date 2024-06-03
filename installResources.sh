@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# installResources.sh
 
-# Lista pakietów do zainstalowania
+
+
 packages=(
     numpy
     pandas
@@ -13,7 +13,7 @@ packages=(
     beautifulsoup4
 )
 
-# Instalacja pakietów
+
 for package in "${packages[@]}"; do
     pip install "$package"
 done
