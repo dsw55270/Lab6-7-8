@@ -24,13 +24,14 @@ jobs:
           python -m pip install --upgrade pip
           pip install pyinstaller pyyaml xmltodict
 
-      - name: Build
-        run: |
-          pyinstaller --onefile Task8.py
+      - name: Build exe for Task8.py
+      run: pyinstaller --onefile Task8.py
+      working-directory: ${{ github.workspace }}
 
       - name: Upload artifact
         uses: actions/upload-artifact@v3
         with:
           name: program
-          path: path/to/artifact/program.exe
-          
+          path: Task8/dist/
+
+
