@@ -32,4 +32,5 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: program
-          path: dist/program.exe
+          path: path/to/artifact/program.exe
+          
